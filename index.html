@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licenseissue</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylinsh.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style=display:flex;justify-content:center;color:white;>Driving License Renewal</h1>
+        <div class="questions">
+            <h2 style= display:flex;justify-content:center;color:red;>Lets get started</h2>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="screen" id="screen1">
+                <div class="question">
+                    <label>Name</label><br>
+                    <input type="text" id="input1" placeholder="Enter name">
+                </div>
+                <div class="question">
+                    <label>Nature of Driving License</label><br>
+                    <div class="radios">
+                        <input type="radio" name="radio" value="option1"> Private
+                        <input type="radio" name="radio" value="option2"> Commercial
+                    </div>
+                </div>
+                <div class="question">
+                    <label>Type of Previous Driving License</label><br>
+                    <div class="radios">
+                        <input type="radio" name="radio2" value="option1">Smart Driving License
+                        <input type="radio" name="radio2" value="option2"> Paper Driving License
+                    </div>
+                </div>
+            </div>
+            <div class="screen" id="screen2">
+                <div class="question">
+                    <label>Place where Driving License was issued</label><br>
+                    <input type="text" id="input2" placeholder="place of Issue">
+                </div>
+                <div class="question" id="choice">
+                   <label for="select1">Issued year of License</label><br>
+                   <div class="custom-dropdown">
+                        <button id="select-button">Select an option</button>
+                        <ul id="select-options" class="select-options">
+                            <li data-value="option1"><input type="radio" name="radio3">2010</li>
+                            <li data-value="option2"><input type="radio" name="radio3">2011</li>
+                            <li data-value="option3"><input type="radio" name="radio3">2013</li>
+                            <li data-value="option4"><input type="radio" name="radio3">2017</li>
+                            <li data-value="option5"><input type="radio" name="radio3">2018</li>
+                            <li data-value="option6"><input type="radio" name="radio3">2021</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="question" id="choice2">
+                    <label for="select2">Expiry year of License</label><br>
+                   <div class="custom-dropdown">
+                        <button id="select-button2">Choose Expiry year</button>
+                        <ul id="select-options2" class="select-options">
+                            <li data-value="option7"><input type="radio" name="radio4" value =2010>2010</li>
+                            <li data-value="option8"><input type="radio" name="radio4" value =2011>2011</li>
+                            <li data-value="option9"><input type="radio" name="radio4" value =2012>2013</li>
+                            <li data-value="option10"><input type="radio" name="radio4" value =2013>2017</li>
+                            <li data-value="option11"><input type="radio" name="radio4" value =2014>2018</li>
+                            <li data-value="option12"><input type="radio" name="radio4" value =2015>2021</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripting.js"></script>
+</body>
+</html>
